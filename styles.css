@@ -1,0 +1,26 @@
+body {
+  background-image: url('/Screen\ Shot\ 2021-04-06\ at\ 2.46.07\ PM.png');
+  color: #fff;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+#test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#finalScore {
+  text-align: center;
+}
