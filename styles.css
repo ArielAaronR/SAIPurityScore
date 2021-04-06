@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
-  background-image: url('/SAIPurityScre/Screen\ Shot\ 2021-04-06\ at\ 2.46.07\ PM.png');
+  font-family: 'Montserrat', sans-serif;
+
+  background: url('/SAIPurityScore/Summertime_Sai_712x313.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #fff;
 }
 
