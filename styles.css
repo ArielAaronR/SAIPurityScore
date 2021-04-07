@@ -11,8 +11,7 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
 
-  /* background: url('/SAIPurityScore/Summertime_Sai_712x313.jpeg') no-repeat center center fixed; */
-  background: url('/Summertime_Sai_712x313.jpeg') no-repeat center center fixed;
+  background: url('/SAIPurityScore/Summertime_Sai_712x313.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
