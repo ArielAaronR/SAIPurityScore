@@ -24,7 +24,7 @@ const data = [
   'Been on voice chat until the sun came up',
   'Blocked someone on the server',
   'Got a warning for posting profanity through a gif URL',
-  '"Made a suggestion that was initially denied because Modmins didn\'t ""currently see a need"" for it, but was approved later"',
+  '"Made a suggestion that was initially denied because Modmins didn\'t "currently see a need" for it, but was approved later"',
   'Been redirected to another channel',
   "Entered a MapleStory voice chat knowing damn well I've never and will never play the game",
   'Wish I could tell modmins to go fuck themselves',
