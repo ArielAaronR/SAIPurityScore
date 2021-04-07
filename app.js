@@ -13,7 +13,7 @@ const data = [
   'Does not live in SoCal',
   'Cheated my way through the ranks/tiers',
   'Leveled up tiers with an inappropriate message',
-  '"Accidentally used the wrong activity, location, or role ping outside of its intended purpose"',
+  'Accidentally used the wrong activity, location, or role ping outside of its intended purpose',
   'Never read the server #rules channel',
   "Don't actually read channel rules before posting but I still hope I don't get in trouble/caught for not reading them",
   'Spent more time on Discord than actually working',
@@ -24,7 +24,7 @@ const data = [
   'Been on voice chat until the sun came up',
   'Blocked someone on the server',
   'Got a warning for posting profanity through a gif URL',
-  '"Made a suggestion that was initially denied because Modmins didn\'t "currently see a need" for it, but was approved later"',
+  'Made a suggestion that was initially denied because Modmins didn\'t "currently see a need" for it, but was approved later',
   'Been redirected to another channel',
   "Entered a MapleStory voice chat knowing damn well I've never and will never play the game",
   'Wish I could tell modmins to go fuck themselves',
@@ -33,11 +33,11 @@ const data = [
   'Got in trouble for meowbread train/spamming meowbread',
   'Posted a controversial confession/started drama/chaos in confessions',
   'Changed my FB name to change my server nickname',
-  'Had a tarrot card reading by Sarah/Tangotini',
+  'Had a tarot card reading by Sarah/Tangotini',
   'Exposed my nipples on webcam',
   "DM'd people without checking their DM status",
   'Simped over someone in SAI',
-  '"Thinks someone in SAI is super cute/handsome/pretty, but I will never tell them in fear of backlash/being called a creep/simp"',
+  'Thinks someone in SAI is super cute/handsome/pretty, but I will never tell them in fear of backlash/being called a creep/simp',
   'Would do nasty things to anyone that has held a modmin status at any point in SAI',
   'Posted a TT in #sexuality (past) / #thirstday (current)',
   'Lurked in TT',
@@ -72,10 +72,10 @@ const data = [
   'Used SAI for resumes or college applications',
   "Messed around with someone else's Alexa or Google home while on voice chat",
   'Tried to speak in voice chat but was muted the entire time',
-  '"Been told by Joe Abarca: ""ur mums got no teef"""',
+  'Been told by Joe Abarca: ""ur mums got no teef""',
   "Giggled at the previous question's number",
   'Been annoyed by a user who keeps hopping back and forth between voice chats',
-  'Talked to a mod in voice chat without releazing they were a mod',
+  'Talked to a mod in voice chat without realizing they were a mod',
   "I've contributed nothing original",
   'Would go on a date with someone from the server',
   'Held hands platonically/romantically/sexually with someone in SAI',
@@ -90,26 +90,30 @@ const data = [
   'Walked away because conversation is too intense (too much going on)',
   'Never joined a voice chat... ever',
   'Been told by Trish that I have shit etiquette and I should fix that',
-  '"I think mods have an ulterior motive, hmmmm...."',
+  'I think mods have an ulterior motive, hmmmm....',
   'Fell off the face of SAI because I got a bf/gf during my time in SAI',
   "Originally didn't want to join an Asian group because I have Asian trauma",
   "Can't read the vibe of the current chat and can't follow along",
   'Sat in a car for longer than needed because I was typing on Discord',
-  '"When someone says something that\'s yikes and has a lot of unpacking to do, but I just :shockfrog:"',
-  '"Said in voice chat: ""Huh? What did you say? Can you say that again? What? Huh?"""',
+  "When someone says something that's yikes and has a lot of unpacking to do, but I just :shockfrog:",
+  'Said in voice chat: ""Huh? What did you say? Can you say that again? What? Huh?""',
   'Posted something but deleted due to poor reaction and/or insecurity',
   'Hates welcoming people',
   'Actually reads #venting',
   'Had the audacity',
   "Reacted/RSVP'd to an event but did not show up",
   'Participated in holiday events like Secret Santa and Love Letters',
-  'Was in SAI before SAI was a thing. #iykiy',
+  'Was in SAI before SAI was a thing. #iykyk',
 ];
 
-data.forEach((question) => {
+data.forEach((question, index) => {
   const li = document.createElement('li');
   let input = `
-  <input type="checkbox"> ${question}</input>
+  <input type="checkbox" id=${index}>  
+    <label for=${index} >
+   ${question}
+   </label> 
+   </input>
   `;
   li.innerHTML = input;
   list.appendChild(li);
@@ -130,6 +134,6 @@ btn.addEventListener('click', () => {
   test.innerHTML = `<div id='finalScore'>
     <h1>Your Score is</h1>
     <h3 class="calc-score">${checklist.length - result}</h3>
-    <button onclick="location.reload()"> Retake Test</button>
+    <button class="btn btn-2" onclick="location.reload()"> Retake Test</button>
     </div>`;
 });
