@@ -75,11 +75,7 @@ body {
   text-transform: uppercase;
   width: 100%;
 }
-@media (min-width: 600px) {
-  .btn {
-    margin: 0 1em 2em;
-  }
-}
+
 .btn:hover {
   text-decoration: none;
 }
